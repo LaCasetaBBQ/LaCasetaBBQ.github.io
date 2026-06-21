@@ -60,16 +60,6 @@ nav{
 }
 .nav-links a:hover{color:var(--burgundy)}
 
-.lang-switch{display:flex;gap:0.35rem;margin-left:1.5rem}
-.lang-switch button{
-  font-family:'Inter',sans-serif;font-size:0.68rem;font-weight:700;
-  letter-spacing:0.06em;background:transparent;border:1px solid var(--gold);
-  color:var(--muted);padding:0.3rem 0.55rem;cursor:pointer;
-  transition:all 0.2s;line-height:1;
-}
-.lang-switch button:hover{color:var(--burgundy);border-color:var(--burgundy)}
-.lang-switch button.active{background:var(--burgundy);border-color:var(--burgundy);color:var(--cream)}
-
 /* ── HERO ── */
 #inicio{
   min-height:92vh;display:flex;align-items:center;
@@ -314,7 +304,6 @@ footer p{font-family:'Inter',sans-serif;font-size:0.7rem;opacity:0.6}
 
 @media (max-width:900px){
   nav{padding:0.9rem 1.25rem}.nav-links{display:none}
-  .lang-switch{margin-left:auto}
   section{padding:3.5rem 1.25rem}
   #inicio{padding-top:6.5rem}
   .hero-fade{
@@ -350,11 +339,6 @@ footer p{font-family:'Inter',sans-serif;font-size:0.7rem;opacity:0.6}
     <li><a href="#galeria" data-i18n="nav_galeria">Galería</a></li>
     <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
   </ul>
-  <div class="lang-switch" id="lang-switch">
-    <button type="button" data-lang="es">ES</button>
-    <button type="button" data-lang="ca">CA</button>
-    <button type="button" data-lang="en">EN</button>
-  </div>
 </nav>
 
 <section id="inicio">
@@ -391,56 +375,56 @@ footer p{font-family:'Inter',sans-serif;font-size:0.7rem;opacity:0.6}
   <div id="panel-pinchos" class="menu-panel active">
     <div class="pinchos-cols">
       <div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_calcots">Calçots (temporada)</span><span class="dotted-rule"></span><span class="m-price">9,95 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_mazorca">Mazorca de maíz</span><span class="dotted-rule"></span><span class="m-price">3,00 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_pimientos">Pincho de pimientos</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_esparragos">Pincho de espárragos</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_brocoli">Pincho de brócoli</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_champinones">Pincho de champiñones</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
+        <div class="m-row"><span class="m-name">Calçots (temporada)</span><span class="dotted-rule"></span><span class="m-price">9,95 €</span></div>
+        <div class="m-row"><span class="m-name">Mazorca de maíz</span><span class="dotted-rule"></span><span class="m-price">3,00 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de pimientos</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de espárragos</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de brócoli</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de champiñones</span><span class="dotted-rule"></span><span class="m-price">1,50 €</span></div>
       </div>
       <div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_alitas_pincho">Pincho de alitas</span><span class="dotted-rule"></span><span class="m-price">2,50 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_panceta">Pincho de panceta de cerdo</span><span class="dotted-rule"></span><span class="m-price">2,00 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_ternera">Pincho de ternera</span><span class="dotted-rule"></span><span class="m-price">3,00 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_salchicha_cerdo">Pincho de salchicha de cerdo</span><span class="dotted-rule"></span><span class="m-price">2,00 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_salchicha_pollo">Pincho de salchicha de pollo</span><span class="dotted-rule"></span><span class="m-price">2,00 €</span></div>
-        <div class="m-row"><span class="m-name" data-i18n="dish_gambas_pincho">Pincho de gambas</span><span class="dotted-rule"></span><span class="m-price">4,00 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de alitas</span><span class="dotted-rule"></span><span class="m-price">2,50 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de panceta de cerdo</span><span class="dotted-rule"></span><span class="m-price">2,00 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de ternera</span><span class="dotted-rule"></span><span class="m-price">3,00 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de salchicha de cerdo</span><span class="dotted-rule"></span><span class="m-price">2,00 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de salchicha de pollo</span><span class="dotted-rule"></span><span class="m-price">2,00 €</span></div>
+        <div class="m-row"><span class="m-name">Pincho de gambas</span><span class="dotted-rule"></span><span class="m-price">4,00 €</span></div>
       </div>
     </div>
   </div>
 
   <div id="panel-tapas" class="menu-panel">
     <div class="tapas-grid">
-      <div class="t-card"><div class="t-img"><div class="fi1"></div></div><div><div class="t-name" data-i18n="dish_bravas_name">Patatas Bravas</div><div class="t-price">3,60 €</div><div class="t-desc" data-i18n="dish_bravas_desc">Dados de patata dorados y crujientes con salsa brava casera.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi2"></div></div><div><div class="t-name" data-i18n="dish_padron_name">Pimiento Padrón</div><div class="t-price">3,90 €</div><div class="t-desc" data-i18n="dish_padron_desc">Pimientos verdes salteados con un toque de sal gorda.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi3"></div></div><div><div class="t-name" data-i18n="dish_moruno_name">Pincho Moruno</div><div class="t-price">4,80 €</div><div class="t-desc" data-i18n="dish_moruno_desc">Dados de carne adobada con especias tradicionales, a la parrilla.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi4"></div></div><div><div class="t-name" data-i18n="dish_manchego_name">Queso Manchego</div><div class="t-price">4,90 €</div><div class="t-desc" data-i18n="dish_manchego_desc">Cuñas de auténtico queso manchego curado.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi5"></div></div><div><div class="t-name" data-i18n="dish_calamares_name">Calamares a la Romana</div><div class="t-price">5,00 €</div><div class="t-desc" data-i18n="dish_calamares_desc">Anillas de calamar con rebozado ligero y crujiente.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi6"></div></div><div><div class="t-name" data-i18n="dish_rollo_name">Rollo de la Casa (2u)</div><div class="t-price">5,50 €</div><div class="t-desc" data-i18n="dish_rollo_desc">Rollitos crujientes rellenos de verduras, con salsa agridulce.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi7"></div></div><div><div class="t-name" data-i18n="dish_morros_name">Morros</div><div class="t-price">5,50 €</div><div class="t-desc" data-i18n="dish_morros_desc">Trozos de morro de cerdo fritos, dorado y crujiente.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi8"></div></div><div><div class="t-name" data-i18n="dish_patascal_name">Patas de Calamar</div><div class="t-price">5,80 €</div><div class="t-desc" data-i18n="dish_patascal_desc">Rejos de calamar fritos con un toque de limón.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi9"></div></div><div><div class="t-name" data-i18n="dish_alitasfritas_name">Alitas Fritas</div><div class="t-price">5,80 €</div><div class="t-desc" data-i18n="dish_alitasfritas_desc">Alitas de pollo doradas y extracrujientes, perfectas para compartir.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi10"></div></div><div><div class="t-name" data-i18n="dish_pollolimon_name">Pollo Limón</div><div class="t-price">6,50 €</div><div class="t-desc" data-i18n="dish_pollolimon_desc">Jugosos trozos de pollo rebozado bañados en una suave y dulce salsa de limón.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi11"></div></div><div><div class="t-name" data-i18n="dish_boquerones_name">Boquerones Fritos</div><div class="t-price">6,80 €</div><div class="t-desc" data-i18n="dish_boquerones_desc">Boquerones ligeramente enharinados y fritos al estilo tradicional.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi12"></div></div><div><div class="t-name" data-i18n="dish_choco_name">Choco a la Plancha</div><div class="t-price">9,80 €</div><div class="t-desc" data-i18n="dish_choco_desc">Choco tierno asado a la plancha, aderezado con ajo y perejil.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi13"></div></div><div><div class="t-name" data-i18n="dish_langostino_name">Langostino a la Plancha</div><div class="t-price">9,90 €</div><div class="t-desc" data-i18n="dish_langostino_desc">Langostinos enteros asados a la parrilla con un toque de sal marina.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi14"></div></div><div><div class="t-name" data-i18n="dish_gambasaladas_name">Gambas Saladas</div><div class="t-price">10,60 €</div><div class="t-desc" data-i18n="dish_gambasaladas_desc">Gambas cocidas en su punto exacto, servidas frías con sal gorda.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi15"></div></div><div><div class="t-name" data-i18n="dish_sepia_name">Sepia a la Plancha</div><div class="t-price">10,80 €</div><div class="t-desc" data-i18n="dish_sepia_desc">Dados de sepia tierna a la plancha, con ajo y perejil fresco.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi16"></div></div><div><div class="t-name" data-i18n="dish_jamon_name">Jamón Ibérico</div><div class="t-price">14,50 €</div><div class="t-desc" data-i18n="dish_jamon_desc">Finas lonchas de auténtico jamón ibérico, el rey de las tapas.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi1"></div></div><div><div class="t-name">Patatas Bravas</div><div class="t-price">3,60 €</div><div class="t-desc">Dados de patata dorados y crujientes con salsa brava casera.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi2"></div></div><div><div class="t-name">Pimiento Padrón</div><div class="t-price">3,90 €</div><div class="t-desc">Pimientos verdes salteados con un toque de sal gorda.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi3"></div></div><div><div class="t-name">Pincho Moruno</div><div class="t-price">4,80 €</div><div class="t-desc">Dados de carne adobada con especias tradicionales, a la parrilla.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi4"></div></div><div><div class="t-name">Queso Manchego</div><div class="t-price">4,90 €</div><div class="t-desc">Cuñas de auténtico queso manchego curado.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi5"></div></div><div><div class="t-name">Calamares a la Romana</div><div class="t-price">5,00 €</div><div class="t-desc">Anillas de calamar con rebozado ligero y crujiente.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi6"></div></div><div><div class="t-name">Rollo de la Casa (2u)</div><div class="t-price">5,50 €</div><div class="t-desc">Rollitos crujientes rellenos de verduras, con salsa agridulce.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi7"></div></div><div><div class="t-name">Morros</div><div class="t-price">5,50 €</div><div class="t-desc">Trozos de morro de cerdo fritos, dorado y crujiente.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi8"></div></div><div><div class="t-name">Patas de Calamar</div><div class="t-price">5,80 €</div><div class="t-desc">Rejos de calamar fritos con un toque de limón.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi9"></div></div><div><div class="t-name">Alitas Fritas</div><div class="t-price">5,80 €</div><div class="t-desc">Alitas de pollo doradas y extracrujientes, perfectas para compartir.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi10"></div></div><div><div class="t-name">Pollo Limón</div><div class="t-price">6,50 €</div><div class="t-desc">Jugosos trozos de pollo rebozado bañados en una suave y dulce salsa de limón.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi11"></div></div><div><div class="t-name">Boquerones Fritos</div><div class="t-price">6,80 €</div><div class="t-desc">Boquerones ligeramente enharinados y fritos al estilo tradicional.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi12"></div></div><div><div class="t-name">Choco a la Plancha</div><div class="t-price">9,80 €</div><div class="t-desc">Choco tierno asado a la plancha, aderezado con ajo y perejil.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi13"></div></div><div><div class="t-name">Langostino a la Plancha</div><div class="t-price">9,90 €</div><div class="t-desc">Langostinos enteros asados a la parrilla con un toque de sal marina.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi14"></div></div><div><div class="t-name">Gambas Saladas</div><div class="t-price">10,60 €</div><div class="t-desc">Gambas cocidas en su punto exacto, servidas frías con sal gorda.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi15"></div></div><div><div class="t-name">Sepia a la Plancha</div><div class="t-price">10,80 €</div><div class="t-desc">Dados de sepia tierna a la plancha, con ajo y perejil fresco.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi16"></div></div><div><div class="t-name">Jamón Ibérico</div><div class="t-price">14,50 €</div><div class="t-desc">Finas lonchas de auténtico jamón ibérico, el rey de las tapas.</div></div></div>
     </div>
   </div>
 
   <div id="panel-asiaticos" class="menu-panel">
     <div class="tapas-grid">
-      <div class="t-card"><div class="t-img"><div class="fi17"></div></div><div><div class="t-name" data-i18n="dish_edamame_name">Edamame</div><div class="t-price">4,80 €</div><div class="t-desc" data-i18n="dish_edamame_desc">Vainas de soja tiernas al vapor con un toque de sal marina.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi18"></div></div><div><div class="t-name" data-i18n="dish_salmonplancha_name">Salmón a la Plancha</div><div class="t-price">9,90 €</div><div class="t-desc" data-i18n="dish_salmonplancha_desc">Glaseado con salsa teriyaki y servido con un toque de limón fresco.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi19"></div></div><div><div class="t-name" data-i18n="dish_sashimi_name">Sashimi de Salmón</div><div class="t-price">12,95 €</div><div class="t-desc" data-i18n="dish_sashimi_desc">Finas láminas de salmón fresco de primera calidad.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi20"></div></div><div><div class="t-name" data-i18n="dish_gyozas_name">Gyozas de Pollo (8u)</div><div class="t-price">6,80 €</div><div class="t-desc" data-i18n="dish_gyozas_desc">Empanadillas japonesas rellenas de pollo, con salsa de soja tradicional.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi21"></div></div><div><div class="t-name" data-i18n="dish_tortasalmon_name">Torta de Salmón y Aguacate</div><div class="t-price">6,00 €</div><div class="t-desc" data-i18n="dish_tortasalmon_desc">Elegante timbal de salmón fresco y aguacate sobre una base de arroz.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi22"></div></div><div><div class="t-name" data-i18n="dish_ramen_name">Ramen</div><div class="t-price">9,00 €</div><div class="t-desc" data-i18n="dish_ramen_desc">Caldo japonés servido con fideos udon, ternera tierna y huevo cocido.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi23"></div></div><div><div class="t-name" data-i18n="dish_arrozpollo_name">Arroz Salteado con Pollo</div><div class="t-price">6,90 €</div><div class="t-desc" data-i18n="dish_arrozpollo_desc">Arroz frito al wok con tiernos trozos de pollo, huevo y zanahoria.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi24"></div></div><div><div class="t-name" data-i18n="dish_fideosgambas_name">Fideos Salteados con Gambas</div><div class="t-price">7,80 €</div><div class="t-desc" data-i18n="dish_fideosgambas_desc">Fideos al wok con gambas, col crujiente y huevo.</div></div></div>
-      <div class="t-card"><div class="t-img"><div class="fi25"></div></div><div><div class="t-name" data-i18n="dish_pollocurry_name">Pollo con Coco y Curry Rojo</div><div class="t-price">7,20 €</div><div class="t-desc" data-i18n="dish_pollocurry_desc">Tiras de pollo bañadas en una suave salsa de curry rojo y leche de coco.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi17"></div></div><div><div class="t-name">Edamame</div><div class="t-price">4,80 €</div><div class="t-desc">Vainas de soja tiernas al vapor con un toque de sal marina.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi18"></div></div><div><div class="t-name">Salmón a la Plancha</div><div class="t-price">9,90 €</div><div class="t-desc">Glaseado con salsa teriyaki y servido con un toque de limón fresco.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi19"></div></div><div><div class="t-name">Sashimi de Salmón</div><div class="t-price">12,95 €</div><div class="t-desc">Finas láminas de salmón fresco de primera calidad.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi20"></div></div><div><div class="t-name">Gyozas de Pollo (8u)</div><div class="t-price">6,80 €</div><div class="t-desc">Empanadillas japonesas rellenas de pollo, con salsa de soja tradicional.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi21"></div></div><div><div class="t-name">Torta de Salmón y Aguacate</div><div class="t-price">6,00 €</div><div class="t-desc">Elegante timbal de salmón fresco y aguacate sobre una base de arroz.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi22"></div></div><div><div class="t-name">Ramen</div><div class="t-price">9,00 €</div><div class="t-desc">Caldo japonés servido con fideos udon, ternera tierna y huevo cocido.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi23"></div></div><div><div class="t-name">Arroz Salteado con Pollo</div><div class="t-price">6,90 €</div><div class="t-desc">Arroz frito al wok con tiernos trozos de pollo, huevo y zanahoria.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi24"></div></div><div><div class="t-name">Fideos Salteados con Gambas</div><div class="t-price">7,80 €</div><div class="t-desc">Fideos al wok con gambas, col crujiente y huevo.</div></div></div>
+      <div class="t-card"><div class="t-img"><div class="fi25"></div></div><div><div class="t-name">Pollo con Coco y Curry Rojo</div><div class="t-price">7,20 €</div><div class="t-desc">Tiras de pollo bañadas en una suave salsa de curry rojo y leche de coco.</div></div></div>
     </div>
   </div>
 </section>
@@ -607,35 +591,6 @@ const I18N = {
     bbq_rule_raw:'Solo se permite traer comida cruda para preparar en la parrilla.',
     bbq_rule_drinks:'No se pueden traer bebidas.',
     bbq_rule_snacks:'No se puede traer comida preparada ni snacks (patatas fritas, frutos secos, etc.).',
-    dish_calcots:'Calçots (temporada)', dish_mazorca:'Mazorca de maíz', dish_pimientos:'Pincho de pimientos',
-    dish_esparragos:'Pincho de espárragos', dish_brocoli:'Pincho de brócoli', dish_champinones:'Pincho de champiñones',
-    dish_alitas_pincho:'Pincho de alitas', dish_panceta:'Pincho de panceta de cerdo', dish_ternera:'Pincho de ternera',
-    dish_salchicha_cerdo:'Pincho de salchicha de cerdo', dish_salchicha_pollo:'Pincho de salchicha de pollo', dish_gambas_pincho:'Pincho de gambas',
-    dish_bravas_name:'Patatas Bravas', dish_bravas_desc:'Dados de patata dorados y crujientes con salsa brava casera.',
-    dish_padron_name:'Pimiento Padrón', dish_padron_desc:'Pimientos verdes salteados con un toque de sal gorda.',
-    dish_moruno_name:'Pincho Moruno', dish_moruno_desc:'Dados de carne adobada con especias tradicionales, a la parrilla.',
-    dish_manchego_name:'Queso Manchego', dish_manchego_desc:'Cuñas de auténtico queso manchego curado.',
-    dish_calamares_name:'Calamares a la Romana', dish_calamares_desc:'Anillas de calamar con rebozado ligero y crujiente.',
-    dish_rollo_name:'Rollo de la Casa (2u)', dish_rollo_desc:'Rollitos crujientes rellenos de verduras, con salsa agridulce.',
-    dish_morros_name:'Morros', dish_morros_desc:'Trozos de morro de cerdo fritos, dorado y crujiente.',
-    dish_patascal_name:'Patas de Calamar', dish_patascal_desc:'Rejos de calamar fritos con un toque de limón.',
-    dish_alitasfritas_name:'Alitas Fritas', dish_alitasfritas_desc:'Alitas de pollo doradas y extracrujientes, perfectas para compartir.',
-    dish_pollolimon_name:'Pollo Limón', dish_pollolimon_desc:'Jugosos trozos de pollo rebozado bañados en una suave y dulce salsa de limón.',
-    dish_boquerones_name:'Boquerones Fritos', dish_boquerones_desc:'Boquerones ligeramente enharinados y fritos al estilo tradicional.',
-    dish_choco_name:'Choco a la Plancha', dish_choco_desc:'Choco tierno asado a la plancha, aderezado con ajo y perejil.',
-    dish_langostino_name:'Langostino a la Plancha', dish_langostino_desc:'Langostinos enteros asados a la parrilla con un toque de sal marina.',
-    dish_gambasaladas_name:'Gambas Saladas', dish_gambasaladas_desc:'Gambas cocidas en su punto exacto, servidas frías con sal gorda.',
-    dish_sepia_name:'Sepia a la Plancha', dish_sepia_desc:'Dados de sepia tierna a la plancha, con ajo y perejil fresco.',
-    dish_jamon_name:'Jamón Ibérico', dish_jamon_desc:'Finas lonchas de auténtico jamón ibérico, el rey de las tapas.',
-    dish_edamame_name:'Edamame', dish_edamame_desc:'Vainas de soja tiernas al vapor con un toque de sal marina.',
-    dish_salmonplancha_name:'Salmón a la Plancha', dish_salmonplancha_desc:'Glaseado con salsa teriyaki y servido con un toque de limón fresco.',
-    dish_sashimi_name:'Sashimi de Salmón', dish_sashimi_desc:'Finas láminas de salmón fresco de primera calidad.',
-    dish_gyozas_name:'Gyozas de Pollo (8u)', dish_gyozas_desc:'Empanadillas japonesas rellenas de pollo, con salsa de soja tradicional.',
-    dish_tortasalmon_name:'Torta de Salmón y Aguacate', dish_tortasalmon_desc:'Elegante timbal de salmón fresco y aguacate sobre una base de arroz.',
-    dish_ramen_name:'Ramen', dish_ramen_desc:'Caldo japonés servido con fideos udon, ternera tierna y huevo cocido.',
-    dish_arrozpollo_name:'Arroz Salteado con Pollo', dish_arrozpollo_desc:'Arroz frito al wok con tiernos trozos de pollo, huevo y zanahoria.',
-    dish_fideosgambas_name:'Fideos Salteados con Gambas', dish_fideosgambas_desc:'Fideos al wok con gambas, col crujiente y huevo.',
-    dish_pollocurry_name:'Pollo con Coco y Curry Rojo', dish_pollocurry_desc:'Tiras de pollo bañadas en una suave salsa de curry rojo y leche de coco.',
     footer_copy:'© 2026 BBQ La Caseta · Torredembarra'
   },
   ca: {
@@ -658,35 +613,6 @@ const I18N = {
     bbq_rule_raw:'Només es permet portar menjar cru per preparar a la graella.',
     bbq_rule_drinks:'No es poden portar begudes.',
     bbq_rule_snacks:'No es pot portar menjar preparat ni snacks (patates fregides, fruits secs, etc.).',
-    dish_calcots:'Calçots (de temporada)', dish_mazorca:'Panotxa de blat de moro', dish_pimientos:'Pinxo de pebrots',
-    dish_esparragos:'Pinxo d\u2019espàrrecs', dish_brocoli:'Pinxo de bròquil', dish_champinones:'Pinxo de xampinyons',
-    dish_alitas_pincho:'Pinxo d\u2019ales', dish_panceta:'Pinxo de cansalada de porc', dish_ternera:'Pinxo de vedella',
-    dish_salchicha_cerdo:'Pinxo de salsitxa de porc', dish_salchicha_pollo:'Pinxo de salsitxa de pollastre', dish_gambas_pincho:'Pinxo de gambes',
-    dish_bravas_name:'Patates Braves', dish_bravas_desc:'Daus de patata daurats i cruixents, banyats en la nostra salsa brava casolana.',
-    dish_padron_name:'Pebrots de Padrón', dish_padron_desc:'Pebrots verds saltats amb un toc de sal grossa.',
-    dish_moruno_name:'Pinxo Morú', dish_moruno_desc:'Daus de carn adobada amb espècies tradicionals, a la graella.',
-    dish_manchego_name:'Formatge Manxec', dish_manchego_desc:'Tallades d\u2019autèntic formatge manxec curat.',
-    dish_calamares_name:'Calamars a la Romana', dish_calamares_desc:'Anelles de calamar arrebossades, lleugeres i cruixents.',
-    dish_rollo_name:'Rotlle de la Casa (2u)', dish_rollo_desc:'Rotllets cruixents farcits de verdures, amb salsa agredolça per sucar.',
-    dish_morros_name:'Morros', dish_morros_desc:'Trossos de morro de porc fregits, daurats i molt cruixents.',
-    dish_patascal_name:'Potes de Calamar', dish_patascal_desc:'Potes de calamar fregides fins quedar cruixents, amb un toc de llimona.',
-    dish_alitasfritas_name:'Ales Fregides', dish_alitasfritas_desc:'Ales de pollastre daurades i extracruixents, perfectes per compartir.',
-    dish_pollolimon_name:'Pollastre amb Llimona', dish_pollolimon_desc:'Sucosos trossos de pollastre arrebossat, banyats en una suau i dolça salsa de llimona.',
-    dish_boquerones_name:'Seitons Fregits', dish_boquerones_desc:'Seitons lleugerament enfarinats i fregits a l\u2019estil tradicional.',
-    dish_choco_name:'Sípia a la Planxa', dish_choco_desc:'Sípia tendra rostida a la planxa, amarada amb una picada d\u2019all i julivert.',
-    dish_langostino_name:'Llagostí a la Planxa', dish_langostino_desc:'Llagostins sencers rostits a la graella amb un toc de sal marina.',
-    dish_gambasaladas_name:'Gambes Salades', dish_gambasaladas_desc:'Gambes cuites al punt exacte, servides fredes amb sal grossa.',
-    dish_sepia_name:'Sípia a la Planxa', dish_sepia_desc:'Daus de sípia tendra a la planxa, amb all i julivert fresc.',
-    dish_jamon_name:'Pernil Ibèric', dish_jamon_desc:'Llesques fines d\u2019autèntic pernil ibèric, el rei indiscutible de les tapes.',
-    dish_edamame_name:'Edamame', dish_edamame_desc:'Beines de soja tendres al vapor amb un toc de sal marina.',
-    dish_salmonplancha_name:'Salmó a la Planxa', dish_salmonplancha_desc:'Glacejat amb salsa teriyaki i servit amb un toc de llimona fresca.',
-    dish_sashimi_name:'Sashimi de Salmó', dish_sashimi_desc:'Làmines fines de salmó fresc de primera qualitat.',
-    dish_gyozas_name:'Gyozes de Pollastre (8u)', dish_gyozas_desc:'Empanadilles japoneses farcides de pollastre, acompanyades de salsa de soja tradicional.',
-    dish_tortasalmon_name:'Timbal de Salmó i Alvocat', dish_tortasalmon_desc:'Elegant timbal de salmó fresc i alvocat sobre una base d\u2019arròs.',
-    dish_ramen_name:'Ramen', dish_ramen_desc:'Brou japonès servit amb fideus udon, vedella tendra i ou cuit.',
-    dish_arrozpollo_name:'Arròs Saltat amb Pollastre', dish_arrozpollo_desc:'Arròs fregit al wok amb trossos tendres de pollastre, ou i pastanaga.',
-    dish_fideosgambas_name:'Fideus Saltats amb Gambes', dish_fideosgambas_desc:'Fideus al wok amb gambes, col cruixent i ou.',
-    dish_pollocurry_name:'Pollastre amb Coco i Curri Vermell', dish_pollocurry_desc:'Tires de pollastre banyades en una suau salsa de curri vermell i llet de coco.',
     footer_copy:'© 2026 BBQ La Caseta · Torredembarra'
   },
   en: {
@@ -709,35 +635,6 @@ const I18N = {
     bbq_rule_raw:'Only raw food to be prepared on the grill is allowed.',
     bbq_rule_drinks:'No outside drinks permitted.',
     bbq_rule_snacks:'No pre-made food or snacks (crisps, nuts, etc.) allowed.',
-    dish_calcots:'Calçots (seasonal)', dish_mazorca:'Corn on the cob', dish_pimientos:'Grilled pepper skewer',
-    dish_esparragos:'Grilled asparagus skewer', dish_brocoli:'Grilled broccoli skewer', dish_champinones:'Grilled mushroom skewer',
-    dish_alitas_pincho:'Chicken wing skewer', dish_panceta:'Pork belly skewer', dish_ternera:'Beef skewer',
-    dish_salchicha_cerdo:'Pork sausage skewer', dish_salchicha_pollo:'Chicken sausage skewer', dish_gambas_pincho:'Prawn skewer',
-    dish_bravas_name:'Patatas Bravas', dish_bravas_desc:'Golden, crispy potato cubes with our homemade spicy brava sauce.',
-    dish_padron_name:'Padrón Peppers', dish_padron_desc:'Traditional sautéed green peppers with a touch of coarse salt.',
-    dish_moruno_name:'Moorish-Style Skewer', dish_moruno_desc:'Marinated meat cubes with traditional spices, grilled.',
-    dish_manchego_name:'Manchego Cheese', dish_manchego_desc:'Wedges of authentic cured Manchego cheese.',
-    dish_calamares_name:'Fried Calamari Rings', dish_calamares_desc:'Squid rings in a light, crispy batter.',
-    dish_rollo_name:'House Spring Rolls (2pc)', dish_rollo_desc:'Crispy rolls filled with vegetables, served with sweet and sour sauce.',
-    dish_morros_name:'Fried Pork Cheek', dish_morros_desc:'Fried pork cheek pieces, golden and very crispy — a classic appetiser.',
-    dish_patascal_name:'Fried Squid Tentacles', dish_patascal_desc:'Fried squid tentacles until crispy, with a touch of lemon.',
-    dish_alitasfritas_name:'Fried Chicken Wings', dish_alitasfritas_desc:'Golden, extra-crispy chicken wings, perfect for sharing.',
-    dish_pollolimon_name:'Lemon Chicken', dish_pollolimon_desc:'Juicy battered chicken pieces in a smooth, sweet lemon sauce.',
-    dish_boquerones_name:'Fried Anchovies', dish_boquerones_desc:'Lightly floured anchovies, fried in the traditional style.',
-    dish_choco_name:'Grilled Cuttlefish', dish_choco_desc:'Tender grilled cuttlefish, dressed with garlic and parsley.',
-    dish_langostino_name:'Grilled King Prawns', dish_langostino_desc:'Whole king prawns grilled with a touch of sea salt.',
-    dish_gambasaladas_name:'Salted Prawns', dish_gambasaladas_desc:'Prawns cooked to perfection, served cold with coarse salt.',
-    dish_sepia_name:'Grilled Cuttlefish', dish_sepia_desc:'Tender cuttlefish cubes grilled with fresh garlic and parsley.',
-    dish_jamon_name:'Iberian Ham', dish_jamon_desc:'Thin slices of authentic Iberian ham, the undisputed king of tapas.',
-    dish_edamame_name:'Edamame', dish_edamame_desc:'Tender steamed soybean pods with a touch of sea salt.',
-    dish_salmonplancha_name:'Grilled Salmon', dish_salmonplancha_desc:'Glazed with teriyaki sauce and served with a touch of fresh lemon.',
-    dish_sashimi_name:'Salmon Sashimi', dish_sashimi_desc:'Thin slices of premium fresh salmon.',
-    dish_gyozas_name:'Chicken Gyoza (8pc)', dish_gyozas_desc:'Japanese dumplings filled with chicken, served with traditional soy sauce.',
-    dish_tortasalmon_name:'Salmon & Avocado Stack', dish_tortasalmon_desc:'An elegant stack of fresh salmon and avocado over a rice base.',
-    dish_ramen_name:'Ramen', dish_ramen_desc:'Japanese broth served with udon noodles, tender beef, and a boiled egg.',
-    dish_arrozpollo_name:'Chicken Fried Rice', dish_arrozpollo_desc:'Wok-fried rice with tender chicken pieces, egg, and carrot.',
-    dish_fideosgambas_name:'Prawn Fried Noodles', dish_fideosgambas_desc:'Wok-fried noodles with prawns, crispy cabbage, and egg.',
-    dish_pollocurry_name:'Coconut Red Curry Chicken', dish_pollocurry_desc:'Chicken strips in a smooth red curry and coconut milk sauce.',
     footer_copy:'© 2026 BBQ La Caseta · Torredembarra'
   }
 };
@@ -824,28 +721,10 @@ function renderHorarioAndNews(lang){
 }
 
 function initSite(){
-  const saved = localStorage.getItem('lacaseta_lang');
-  const lang = saved || detectLang();
-  setLanguage(lang, false);
-  wireLangSwitch();
-}
-
-function setLanguage(lang, persist){
-  if (!I18N[lang]) lang = 'es';
+  const lang = detectLang();
   applyTranslations(lang);
   renderHorarioAndNews(lang);
-  document.querySelectorAll('.lang-switch button').forEach(b=>{
-    b.classList.toggle('active', b.dataset.lang === lang);
-  });
-  if (persist) localStorage.setItem('lacaseta_lang', lang);
 }
-
-function wireLangSwitch(){
-  document.querySelectorAll('.lang-switch button').forEach(btn=>{
-    btn.addEventListener('click', ()=> setLanguage(btn.dataset.lang, true));
-  });
-}
-
 document.addEventListener('DOMContentLoaded', initSite);
 
 function swap(id,btn){
